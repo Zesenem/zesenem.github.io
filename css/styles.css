@@ -1,0 +1,123 @@
+/* Soft Reset */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header section */
+
+header {
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 40px 20px; 
+    border-bottom: 5px solid #555; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header h1 {
+    font-size: 3em; 
+    margin-bottom: 10px;
+    font-weight: 600; 
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc; 
+    font-weight: 400;
+}
+
+/* Main section */
+
+main {
+    max-width: 900px;
+    margin: 30px auto; 
+    padding: 30px;
+    background-color: white; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease; 
+}
+
+main:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+section h2 {
+    font-size: 2em; 
+    margin-bottom: 15px;
+    color: #333; 
+    font-weight: 500;
+}
+
+/* List of projects */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 1.2em; 
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+ul li a:hover {
+    color: #555;
+    transform: translateX(5px);
+}
+
+ul li a:focus {
+    outline: 3px solid #555;
+    outline-offset: 3px;
+}
+
+/* Footer section */
+
+footer {
+    text-align: center;
+    padding: 20px 15px; 
+    background-color: #333; 
+    color: white;
+    margin-top: 40px; 
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    outline: 3px solid #555;
+    outline-offset: 3px;
+}
