@@ -41,8 +41,9 @@ header h1 {
 
 header p {
     font-size: 1.2em;
-    color: #ccc; 
+    color: #ccc;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 /* Main section */
@@ -71,31 +72,40 @@ section h2 {
 
 /* List of projects */
 
-ul {
+.projects {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects ul {
+    padding: 10px;
     list-style: none;
 }
 
-ul li {
-    margin: 15px 0;
+.projects ul li {
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #333; 
-    font-size: 1.2em; 
-    font-weight: 500;
-    transition: color 0.3s ease, transform 0.3s ease; 
+.projects ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-ul li a:hover {
-    color: #555;
-    transform: translateX(5px);
+.projects ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
 }
 
-ul li a:focus {
-    outline: 3px solid #555;
-    outline-offset: 3px;
-}
 
 /* Footer section */
 
